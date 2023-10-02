@@ -14,7 +14,7 @@
  * @returns {number} - The sum of the two numbers
  */
 function sum(a, b) {
-  // write your code here & return value
+  return a + b;
 }
 
 /**
@@ -24,7 +24,12 @@ function sum(a, b) {
  * @returns {number} - The sum of the two numbers
  */
 function betterSum(x, y) {
-  // write your code here & return value
+  // Using parseFloat to convert strings to numbers
+  const numX = typeof x === 'string' ? parseFloat(x) : x;
+  const numY = typeof y === 'string' ? parseFloat(y) : y;
+
+  // Calculate the sum
+  return numX + numY;
 }
 
 /**
@@ -37,8 +42,9 @@ function betterSum(x, y) {
  * ? computes the first operand modulo the second operand
  */
 function remainder(number, divisor) {
-  // write your code here & return value
+  return number % divisor;
 }
+
 module.exports = {
   sum,
   betterSum,

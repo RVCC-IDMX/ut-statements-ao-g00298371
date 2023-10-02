@@ -1,0 +1,24 @@
+{
+  "name": "unit-test-stmnts",
+  "version": "1.0.0",
+  "description": "Learning Skills for Basic JavaScript",
+  "scripts": {
+    "test:1": "vitest tests/stmnts-01.test.js --globals --run --reporter verbose",
+    "test:2": "vitest tests/stmnts-02.test.js --globals --run --reporter verbose",
+    "test:3": "vitest tests/stmnts-03.test.js --globals --run --reporter verbose",
+    "test:4": "vitest tests/stmnts-04.test.js --globals --run --reporter verbose",
+    "test:5": "vitest tests/stmnts-05.test.js --globals --run --reporter verbose",
+    "test:6": "vitest tests/stmnts-06.test.js --globals --run --reporter verbose",
+    "test:7": "vitest tests/stmnts-07.test.js --globals --run --reporter verbose",
+    "test": "cd tests & vitest --run stmnts-01.test.js stmnts-02.test.js stmnts-03.test.js stmnts-04.test.js stmnts-05.test.js stmnts-06.test.js stmnts-07.test.js --silent --globals "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.23.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "vitest": "^0.23.2"
+  }
+}
